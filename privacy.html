@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skye LLC - Privacy Policy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #780000;
+            --secondary-color: #2C2F33;
+            --accent-color: #FFFFFF;
+            --text-color: #FFFFFF;
+            --dark-red: #580000;
+            --light-red: #980000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--dark-red));
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-color: white;
+            clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+            opacity: 0.1;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header p {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, var(--dark-red), var(--primary-color));
+        }
+
+        .tos-container {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .tos-section {
+            margin-bottom: 2rem;
+        }
+
+        .tos-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .tos-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--accent-color);
+        }
+
+        .tos-section p {
+            margin-bottom: 1rem;
+        }
+
+        .tos-section a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .tos-section a:hover {
+            color: var(--light-red);
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-red);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        footer h2 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .tos-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div><img src="assets/logo.png" alt="Skye LLC Logo" class="logo"></div>
+            <h1>Privacy Policy</h1>
+            <p>Last updated: 2025-04-26</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="tos-container">
+                <div class="tos-section">
+                    <p>Welcome to Skye. If you are using the Skye Discord bot, you agree to the following privacy policy.</p>
+                </div>
+
+                <div class="tos-section">
+                    <h2>Data Collection</h2>
+                    <p>Skye does not collect any data about your messages. We only collect your User ID, and ban reasons in a database file.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>Connect With Us</h2>
+            <p>&copy; 2024 Skye LLC. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
